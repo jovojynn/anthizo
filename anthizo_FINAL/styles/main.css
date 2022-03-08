@@ -1,0 +1,441 @@
+/*
+|==============================
+|	GLOBAL
+|==============================
+*/
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.2;
+	background-image: url(../images/andrea-ferrario-3WgPZbsDSkE-unsplash-min.jpg);
+	background-size: cover;
+	background-repeat: repeat-y;
+	color: #0A0A0A;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #0A0A0A;
+}
+
+header {
+	background-color: #FFC1CC;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    font-family: 'Amaranth', sans-serif;
+    -webkit-box-shadow: 0px 6px 29px -5px rgba(224,155,167,1);
+    -moz-box-shadow: 0px 6px 29px -5px rgba(224,155,167,1);
+    box-shadow: 0px 6px 29px -5px rgba(224,155,167,1);
+}
+
+h1 {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+}
+
+h2 {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+
+h3 {
+	margin: 36px 0 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+button {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 24px;
+	background-color: #9090FF;
+	color: #FFF;
+	width: auto;
+	height: 100px;
+	padding: 5px 35px;
+	margin: 10px;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 2px 3px 11px 5px #FF6681;
+	transition: 0.5s ease-in-out;
+}
+
+button:hover{
+	background-color: #FF6681;
+	box-shadow: 2px 3px 11px 5px #9090FF;
+}
+
+main {	
+	padding-bottom: 120px;
+	width: 100vw;
+}
+
+h4 {
+	margin-top: 12px;
+	padding-bottom: 12px;
+}
+
+p {
+	margin-bottom: 13px;
+}
+
+/*
+|==============================
+|	GRID HELPERS
+|==============================
+*/
+.is-flex {
+	display: flex;
+}
+
+.sub-menu {
+	justify-content: center;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 87px;
+	display: none;
+}
+
+.sub-menu2 {
+	justify-content: center;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 15px;
+	left: 221px;
+	display: none;
+}
+
+.cover {
+	margin: 150px auto 0;
+	height: 20vh;
+	background-image: url(../images/pexels-jonathan-borba-3563173-min.jpg);
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+|==============================
+|	HELPER CLASSES
+|==============================
+*/
+
+.txt-center {
+	text-align: center;
+}
+
+.container {
+	padding: 0 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*
+|==============================
+|	HEADER NAVIGATION
+|==============================
+*/
+.gn a {
+	display: block;
+	padding: 31.5px;
+}
+
+.gn ul.menu {
+	justify-content: space-evenly;
+	position: relative;
+}
+
+.gn ul li {
+	display: inline-block;
+	background-color: #FFC1CC;
+}
+
+.gn ul ul li {
+	display: inline-block;
+	background-color: #9090ff80;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+.gn ul ul li a {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.gn ul ul ul li {
+	display: inline-block;
+	background-color: #9090ff80;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+}
+
+.gn ul ul ul li a {
+	color: #000;
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.menu a:hover {
+	background-color:#ffffffa1;	
+	transition: all 0.5s ease;
+}
+
+.gn ul li:hover > ul {
+	display: inherit;
+}
+
+
+.gn ul ul li:hover > ul {
+	display: inherit;
+}
+
+.gn ul.sub-menu li {
+	width: 221px;
+	display: list-item;
+	position: relative;
+}
+
+/*
+|==============================
+|	HOME-LANDING PAGE
+|==============================
+*/
+
+.home-intro img {
+	display: block;
+	margin: 25px auto 0 auto;
+	width: 220px;
+	height: 271px;
+	margin-top: 120px;
+}
+
+.section-heading {
+	text-transform: uppercase;
+    margin: 25px auto 22px auto;
+}
+
+.home-info p {
+	font-size: 45px;
+	margin: 100px auto 50px;
+}
+
+.features {
+	margin: 150px auto 0;
+	background-image: url(../images/pexels-wendy-wei-3812949-min.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.features h2 {
+	color: #FFF;
+	padding-top: 200px;
+}
+
+.features ul {
+	margin: auto 50px 100px;
+}
+
+.features li {
+	color: #FFF;
+	margin-top: 100px;
+	text-transform: uppercase;
+	margin: 100px auto 50px;
+}
+
+.features button {
+	margin-bottom: 75px;
+}
+
+/*
+|==============================
+|	EVENT PAGE
+|==============================
+*/
+.content {
+	margin: 0 200px;
+}
+
+.content section {
+	background-color: rgb(243, 176, 167, 0.5);
+	background-size: unset;
+	padding: 70px 20px;
+	margin-bottom: 20px;
+}
+
+.fest-info {
+	position: relative;
+	top: -50px;
+	left: 0;
+	z-index: -5;
+	padding-bottom: 50px;
+}
+
+.fest-info a {
+	color: rgb(214,108,99);
+}
+
+.fest-info a:hover {
+	color: rgb(87,61,73);
+}
+
+.going-nav {
+	text-align: center;
+	font-weight: 700;
+	position: relative;
+	top: -25px;
+	left: 0;
+	z-index: -1;
+}
+
+#sched .times {
+	margin-right: 15px;
+	text-align: right;
+	width: 15vmin;
+}
+
+.faq-sections {
+	margin-top: 70px;
+}
+
+.event-bottom img {
+	margin: 150px auto 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+|==============================
+|	CONTACT PAGE
+|==============================
+*/
+.c-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.c-h1 {
+	font-size: 50px;
+	width: 100vw;
+}
+
+.c-h2 {
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.address {
+	width: 1200px;
+	margin: 30px 0 75px 0;
+}
+
+.user-input p {
+	text-transform: uppercase;
+}
+
+.user-input input {
+	height: 60px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #d3d3ff;
+	box-shadow: -2px 6px #00000075;
+
+}
+
+.user-input .names {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.names .first {
+	flex-basis: 50%;
+	max-width: 50%;
+	flex-direction: column;
+	margin-right: 100px;
+}
+
+.names .last {
+	flex-basis: 50%;
+	max-width: 50%;
+	flex-direction: column;
+}
+
+.mail input {
+	width: 1200px;
+	margin-bottom: 20px;
+}
+.mail .messagebox {
+	padding-top: 28px;
+	padding-bottom: 410px;
+}
+.btn {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 60px;
+}
+
+.btn button {
+	width: 200px;
+}
+
+/*
+|==============================
+|	FOOTER
+|==============================
+*/
+.footer {
+	background-color: #FFC1CC;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.footer p {
+	display: flex;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.ft-nav {
+	padding-top: 15px;
+}
+
+.ft-nav ul {
+	justify-content: space-evenly;
+	margin-bottom: 16px;
+	font-family: 'Amaranth', sans-serif;
+}
+
+.ft-nav a {
+	padding: 10px;
+}
+
+.ft-nav a:hover {
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
